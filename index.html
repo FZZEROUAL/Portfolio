@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<meta name="title" content="fatima zahra ZEROUAL - Full Stack developer">
+    <title>ZEROUAL Fatima Zahra - Full stack developer</title>
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="logo.png" style="width: 100%;">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   
+    <link rel="stylesheet" href="global.css" />
+   
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js" async></script>
+  </head>
+
+   
+  <div class="loader_bg">
+    <div class="loader"></div>
+</div>
+
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 3000);
+</script>
+
+<style>
+ 
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999; 
+    background: #ccc;
+    width: 100vw; 
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #9370DB;
+    animation: spin 2s linear infinite;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #BA55D3;
+    animation: spin 3s linear infinite;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FF00FF;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pro  {
+  display: flex;
+}
+
+.language{
+ 
+  font-size: 1rem;
+  
+  color: var(--primary-color);
+}
+        
+        
+  </style>
+
+   
+  <body id="home">
+    
+    <header id="hero">
+      <nav id="navbar-scroll" class="navbar">
+     <!--      <blockquote class="alert">
+          <span>This site is currently being updated</span>
+          <i class="fas fa-exclamation-circle"></i>
+        </blockquote> -->
+        <h1 class="logo" >
+          <a href="#home"
+            ><img src="logo.png" id="ZEROUAL" alt="ZEROUAL"
+          /></a>
+        </h1>
+        <div id="menu">
+         
+        
+
+          <ul class="nav-menu">
+           
+            <li class="nav-items">
+              <a href="#about" class="nav-link"
+                ><i class="nav-icon fas fa-user"></i> ABOUT</a
+              >
+            </li>
+            <li class="nav-items">
+              <a href="#skills" class="nav-link"
+                ><i class="nav-icon fas fa-cog"></i> SKILLS</a
+              >
+            </li>
+            <li class="nav-items">
+              <a href="#projects" class="nav-link"
+                ><i class="nav-icon fas fa-code"></i> PROJECTS</a
+              >
+            </li>
+          
+            <li class="nav-items">
+              <a href="#contact" class="nav-link"
+                ><i class="nav-icon fas fa-address-book"></i> CONTACT</a
+              >
+            </li>
+
+
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  
+                </label>
+               
+            
+
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+      
+
+      <section class="content container">
+      
+          <div class="content-text">
+            <h1>ZEROUAL Fatima Zahra<span class="underline"></span></h1>
+            <div id="typeAnimation" class="type-animation">
+              Web Developer | PHP | Laravel | React
+            </div>
+          
+            <p>
+              Passionate about developing innovative solutions through open-source projects.
+            </p>
+          <a
+            href="CV-FZ.pdf"
+            class="text-style"
+            >Resume</a
+          >
+        </div>
+        <div class="content-image">
+          <div class="overlay-icons"></div>
+          <img
+            src="fz.jpg"
+            alt="A portrait of ZEROUAL"
+          />
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <div class="bio container">
+          <h2 class="head-text">
+            ABOUT ME<span class="underline underline-primary"></span>
+          </h2>  
+
+          <p>
+            I'm a web developer based in Casablanca, Morocco,
+            with a strong focus on web development and open-source technologies.
+          </p>
+
+
+          <p>
+            I possess strong expertise in React, JavaScript, PHP and Laravel ,
+             and I'm dedicated to furthering my skills in vue js, Next.js, 
+            and Java by actively working on diverse and challenging projects.
+          </p> 
+
+          <p>
+         In my downtime, I take pleasure in giving back to different 
+         communities by actively contributing to open source projects.
+    
+          </p>
+
+          <p>
+            Technologies and tools that are currently capturing my interest and exploration : 
+          </p>
+          <p>
+            <span style="size: 20px;  font-weight: bold;">Client Development : </span>React, Next Js, jQuery,
+            WordPress, CSS 3, Tailwind CSS, Bootstrap,
+            Android studio, XML.
+          </p>
+          <p>
+            <span style="size: 20px;  font-weight: bold;">Server Development : </span>Laravel, Express.js,Node.js.
+          </p>
+          <p>
+            <span style="size: 20px;  font-weight: bold;">Programming Languages : </span>Java, Python,
+            JavaScript, PHP, C, SQL.
+          </p>
+          <p>
+            <span style="size: 20px;  font-weight: bold;">Data Base : </span>NoSQL, MySQL, SQL Server.
+          </p>
+      
+         
+        </div>
+      </section>
+
+
+      <section id="skills">
+        <div id="skills" class="container">
+          <div class="skills">
+            <div class="box-header">
+              <h3 class="text-primary head-text">
+                Benefits<span class="underline underline-primary"></span>
+              </h3>
+              <h3>Why should you hire me?</h3>
+              <p>
+                I follow key principles in every web project I undertake, 
+                ensuring that the websites I build or clone are both uniquely
+                crafted and designed for scalability.
+              </p>
+            </div><br><br>
+            
+              <div class="card">
+                <span class="fas fa-mobile-alt color-2"></span>
+                <h3>Responsive Design</h3>
+                <p>
+                  I am passionate about responsiveness and making the websites I
+                  build look good on different devices, browsers and cross
+                  platforms using both "mobile first" approach and desktop
+                  "media queries"
+                </p>
+              </div>
+
+
+
+              <div class="card">
+                <span class="fas fa-code color-3"></span>
+                <h3> Minimal coding</h3>
+                <p>
+                  I strive to keep my codebase streamlined by using tools such as CSS Variables and
+                   creating custom utility classes, which helps me write efficient and minimal code.
+                </p>
+              </div>
+
+
+
+              <div class="card">
+                <span class="fas fa-lightbulb exclamation-on color-4"></span>
+                <h3> Problem-Solving</h3>
+                <p>
+                 I am a great problem solver because I can compartmentalize all aspects of a problem before studying it.
+                  I also like to bring more experienced team members in to add to the solution.
+                </p>
+              </div>
+
+             
+
+              <div class="card">
+                <span class="fas fa-handshake angle color-1"></span>
+                <h3> Team-Spirit</h3>
+                <p>
+                  Collaboration is key to professional success in any field. 
+                  I foster strong working relationships with clients, colleagues, and managers, which not only 
+                  boosts my productivity but also contributes to a positive and efficient work environment for everyone involved.
+                </p>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Technologies Section-->
+      <section class="container icons-container">
+        <div class="icons">
+          <span class="icon fab fa-html5" title="HTML5"></span>
+          <span class="icon fab fa-css3-alt" title="CSS3"></span>
+          <span class="icon fab fa-js" title="JavaScript"></span>
+          <span class="icon fab fa-react js" title="react js"></span>
+          <span class="icon fab fa-git-alt" title="Git"></span>
+          <span class="icon fab fa-laravel" title="laravel"></span>
+          
+          
+         
+        </div>
+      </section>
+
+      <!-- Projects Section-->
+      <section id="projects" class="container">
+        <h2 class="head-text">
+          FEATURED PROJECTS<span class="underline underline-secondary"></span>
+        </h2>
+
+        <div id="project-full">
+
+          <div class="container1">
+            <div class="card1">
+              <div class="box">
+                <div class="content">
+                  
+                  <img src="img-Mobile-shop/front1.png" class="img-fluid" alt="">
+                 
+                    <p class="p">
+                    "Mobile Shop" is an e-commerce platform using Nextjs, MongoDB, Express.js, and Tailwind CSS. 
+                      It offers a modern UI and secure online payments for electronic device sales.
+                    </p>
+                    
+                    <a href="javascript:void(0);" class="a" data-images="img-Mobile-shop/front1.png,
+                    img-Mobile-shop/front2.png,
+                    img-Mobile-shop/front3.png,
+                    img-Mobile-shop/front4.png,
+                    img-Mobile-shop/front5.png,
+                    img-Mobile-shop/front6.png,
+                    img-Mobile-shop/front7.png,
+                    img-Mobile-shop/front8.png,
+                    img-Mobile-shop/front9.png,
+                    img-Mobile-shop/front10.png" onclick="openModal(this)" title="Preview">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="https://github.com/FZZEROUAL/ecommerce-front" class="a" title="More Details">
+                      <i class="fa fa-link"></i>
+                    </a>
+
+                </div>
+              </div>
+            </div>
+          
+            <div class="card1">
+              <div class="box">
+                <div class="content">
+                  <img src="img-Mobile-shop/dash.png" class="img-fluid" alt="">
+                  <center>
+                    <p class="p">
+                      The admin section of "Mobile Shop" enables managing products,
+                       orders, and site settings with an intuitive interface,
+                        using the same technologies for efficient management.
+
+
+                    </p>
+                  </center>
+                  <center>
+                    <a href="javascript:void(0);" class="a" data-images="img-Mobile-shop/dash.png,
+                    img-Mobile-shop/product.png,
+                    img-Mobile-shop/ProductE.png,
+                    img-Mobile-shop/Category.png,
+                    img-Mobile-shop/orders.png,
+                    img-Mobile-shop/Admins.png,
+                    img-Mobile-shop/Setting.png" onclick="openModal(this)" title="Preview">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="https://github.com/FZZEROUAL/ecommerce-admin" class="a" title="More Details">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </center>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card1">
+              <div class="box">
+                <div class="content">
+                  <img src="img-coffee/coffee1.png" class="img-fluid" alt="">
+                  <center>
+                    <p class="p">
+                      "Coffee Shop" is an online coffee store built with JavaScript, 
+                      HTML, and CSS, offering sections like About and Menu for 
+                      an effortless browsing and ordering experience.      </p>
+                  </center>
+                  <center>
+                    <a href="javascript:void(0);" class="a" data-images="img-coffee/coffee1.png,
+                  img-coffee/coffee2.png,
+                  img-coffee/coffee3.png,
+                  img-coffee/coffee4.png,
+                  img-coffee/coffee5.png,
+                  img-coffee/coffee6.png,
+                  img-coffee/coffee7.png" onclick="openModal(this)" title="Preview">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="https://github.com/FZZEROUAL/coffee-shop" class="a" title="More Details">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="container1">
+            <div class="card1">
+              <div class="box">
+                <div class="content">
+                  <img src="img-food/food1.png" class="img-fluid" alt="">
+                  <center>
+
+                    <p class="p">
+                      "Food" is a restaurant platform built with PHP, JavaScript, CSS, and MySQL.
+                       It lets users browse restaurants, place orders, and make secure online payments.
+
+
+                    </p>
+                  </center>
+                  <center>
+                    <a href="javascript:void(0);" class="a" data-images="img-food/food1.png,
+                    img-food/food2.png,
+                    img-food/food3.png,
+                    img-food/food4.png,
+                    img-food/food5.png,
+                    img-food/food6.png,
+                    img-food/food7.png,
+                    img-food/food8.png,
+                    img-food/food9.png" onclick="openModal(this)" title="Preview">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="https://github.com/FZZEROUAL/Online-food" class="a" title="More Details">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </center>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card1">
+              <div class="box">
+                <div class="content">
+                  <img src="img-food/dash.png" class="img-fluid" alt="">
+                  <center>
+                    <p class="p">
+                      The admin panel of "Food" provides tools for managing the platform's key operations,
+                       including user and restaurant management, as well as menu and order oversight.
+                    </p>
+                  </center>
+                  <center>
+                    <a href="javascript:void(0);" class="a" data-images="img-food/dash.png,
+                    img-food/user.png,
+                    img-food/all-r.png,
+                    img-food/add-c.png,
+                    img-food/add-r.png,
+                    img-food/all-m.png,
+                    img-food/add-m.png,
+                     img-food/order.png" onclick="openModal(this)" title="Preview">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="https://github.com/FZZEROUAL/Online-food/tree/master/admin" class="a" title="More Details">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </center>
+                </div>
+              </div>
+            </div>
+      
+            <div class="card1">
+              <div class="box">
+                <div class="content">
+                  <img src="img-skincare/shop.png" class="img-fluid" alt="">
+                  <center>
+                    <p class="p">
+                      "Skin Care Shop" is an online store created with JavaScript, HTML,
+                       and CSS, designed for users to effortlessly browse and purchase skincare products.
+
+
+                    </p>
+                  </center>
+                  <center>
+                    <a href="javascript:void(0);" class="a" data-images="img-skincare/shop.png,
+                   img-skincare/shop1.png,
+                   img-skincare/shop2.png,
+                   img-skincare/shop3.png,
+                   img-skincare/shop4.png,
+                   img-skincare/shop5.png,
+                   img-skincare/shop6.png" onclick="openModal(this)" title="Preview">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="https://github.com/FZZEROUAL/skin-care-Shop" class="a" title="More Details">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container1">
+            <div class="card1">
+              <div class="box">
+                <div class="content">
+                  <img src="img-qr/Q1.png" class="img-fluid" alt="">
+                  <center>
+                    <p class="p">
+                      The employee attendance system, built with Laravel, React, MySQL and CSS, 
+                      tracks attendance via QR codes and includes an admin panel 
+                      for managing employees and records.
+
+
+                    </p>
+                  </center>
+                  <center>
+                    <a href="javascript:void(0);" class="a" data-images="img-qr/Q1.png,
+                   img-qr/Q2.png,
+                   img-qr/Q3.png,
+                   img-qr/Q4.png,
+                   img-qr/Q5.png" onclick="openModal(this)" title="Preview">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="https://github.com/FZZEROUAL/Pointage-Qr-Code" class="a" title="More Details">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </center>
+                </div>
+              </div>
+            </div>
+           
+            
+           
+            <div class="card1">
+              <div class="box">
+                <div class="content">
+                  
+                  <img src="img-em/Em1.png" class="img-fluid" alt="">
+                  <center>
+                    <p class="p">
+                      This employee management system, built with Laravel, CSS, and MySQL, 
+                      offers a robust solution for managing employee records, 
+                      streamlining operations from data entry to overall administration.
+                    </p>
+                  </center>
+                  <center>
+                    <a href="javascript:void(0);" class="a" data-images="img-em/Em1.png,
+                   img-em/Em2.png,
+                   img-em/Em3.png,
+                   img-em/Em4.png,
+                   img-em/Em5.png,
+                   img-em/Em6.png
+                " onclick="openModal(this)" title="Preview">
+                      <i class="fa fa-eye"></i>
+                    </a>
+                    <a href="https://github.com/FZZEROUAL/Gestion-des-employ-s" class="a" title="More Details">
+                      <i class="fa fa-link"></i>
+                    </a>
+                  </center>
+                </div>
+              </div>
+            </div>
+          
+            
+         
+          </div>
+         
+          <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+            <button class="nav-button prev" onclick="prevImage()">&#10094;</button>
+            <button class="nav-button next" onclick="nextImage()">&#10095;</button>
+          </div>
+
+       
+        <!-- Space -->
+        <h2 class="head-text">
+          More Projects<span class="underline underline-secondary"></span>
+        </h2>
+        <div class="project-container">
+          <div class="card">
+            <div class="icon-header">
+              <a
+                href="https://github.com/FZZEROUAL/To-Do-List"
+                target="_blank"
+                rel="no-opener no-referrer"
+                title="Github"
+                ><span class="fab fa-github"></span
+              ></a>
+              <a
+              href="pr-m/to-do.png
+            
+           "
+                target="_blank"
+                rel="no-opener no-referrer"
+                title="Live Preview"
+                ><span class="fas fa-external-link-alt"></span
+              ></a>
+            </div>
+
+
+            <header>
+              <h3>To-Do-List</h3>
+              <p>
+                The Movie List is a tool that allows users to easily manage and categorize their film collection.
+              </p>
+            </header>
+            <ul>
+              <li class="language">ReactJs</li>
+              <li class="language">CSS</li>
+             
+            </ul>
+          </div>
+
+
+
+
+
+
+          <div class="card">
+            <div class="icon-header">
+              <a
+                href="https://github.com/FZZEROUAL/generate-qr-code"
+                title="Github"
+                target="_blank"
+                rel="no-opener no-referrer"
+                ><span class="fab fa-github"></span
+              ></a>
+              <a
+                href="pr-m/Qr.png"
+                title="Live Preview"
+                target="_blank"
+                rel="no-opener no-referrer"
+                ><span class="fas fa-external-link-alt"></span
+              ></a>
+            </div>
+            <header>
+              <h3>Generate Qr-code</h3>
+              <p>The Qr Generator is collects user data for easy and secure account creation.</p>
+            </header>
+            <ul>
+              <li class="language">JavaScript</li>
+              <li class="language">HTML5</li>
+              <li class="language">CSS</li>
+             
+            </ul>
+          </div>
+
+
+
+
+
+
+
+          <div class="card">
+            <div class="icon-header">
+              <a
+                href="https://github.com/FZZEROUAL/Redux"
+                title="Github"
+                target="_blank"
+                rel="no-opener no-referrer"
+                ><span class="fab fa-github"></span
+              ></a>
+              <a
+                href="pr-m/redux.png"
+                title="Live Preview"
+                target="_blank"
+                rel="no-opener no-referrer"
+                ><span class="fas fa-external-link-alt"></span
+              ></a>
+            </div>
+            <header>
+              <h3>Product Catalog</h3>
+              <p>The Product List is a tool that helps users easily track and manage their collection of items.</p>
+            </header>
+            <ul>
+              <li class="language">Redux</li>
+              <li class="language">CSS</li>
+            </ul>
+          </div>
+
+               </section>
+
+
+      
+    
+
+
+   
+          
+      <!-- Contact -->
+       
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="form-header">
+            <h2 class="head-text">
+          Contact<span class="underline underline-secondary"></span>
+        </h2>
+
+        <h2 class="text-secondary">Get In Touch</h2>
+        <p>
+          I'm always eager to connect and collaborate on new projects.
+           If you're interested in discussing opportunities or working together,
+           please feel free to reach out. I'll get back to you as soon as <br>I can..
+          Thank you!
+
+        </p>
+       
+
+                 <section class="icons-container">
+        <div class="container">
+          <div class="social icons">
+            <a
+              href="https://github.com/FZZEROUAL"
+              title="Github"
+              target="_blank"
+              class="fab fa-github"
+            ></a>
+          
+            <a
+              href="https://www.linkedin.com/in/fatima-zahra-zeroual-bb1795304"
+              title="Linkedin"
+              target="_blank"
+              class="fab fa-linkedin"
+            ></a>
+           
+            <a href="mailto:zeroualfatimazahra06@gmail.com" title="Gmail" target="_blank" class="fab fa-google"></a>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+     
+        <div class="footer-container">
+          
+          <p>Copyright &copy; ZEROUAL Fatima Zahra <span id="copyright-year">2023</span>, All rights reserved</p>
+          <a href="#home" class="btn-scroll-top" title="Home"
+            ><span class="fas fa-angle-up"></span
+          ></a>
+        </div>
+   
+       
+    </footer>
+  </body>
+</html>
