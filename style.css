@@ -1021,7 +1021,7 @@ h4 {
   .container1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 40px 0;
   }
   
